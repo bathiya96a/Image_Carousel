@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+img {
+  width: 100%;
+  height: 600px;
+}
+
+.slide-carousel {
+  max-width: 100%;
+  position: relative;
+}
+
+/* .slides {
+  display: none;
+} */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.next {
+  right:0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(183, 187, 187);
+}
+
+.text1, .text2 {
+  color:azure;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.text1 {
+  font-size: 36px;
+  bottom:50px;
+  padding: 5px 10px;
+}
+
+.text2 {
+  font-size: 18px;
+  bottom: 8px;
+  pad: 5px 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@keyframes fade {
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
